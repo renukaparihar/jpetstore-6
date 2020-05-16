@@ -166,6 +166,17 @@
   </dependencies>
 
   <build>
+         <build>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.sonar</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+    </plugins>
+  </pluginManagement>
+</build>
     <finalName>jpetstore</finalName>
     <pluginManagement>
       <plugins>
@@ -181,12 +192,7 @@
             </archive>
           </configuration>
         </plugin>
-        <plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.0.2</version>
-       </plugin>
-        <plugin>
+         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
           <version>3.0.0-M4</version>
         </plugin>
